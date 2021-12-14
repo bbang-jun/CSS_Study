@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.parent{
+    background-color: #e5e9f2;
+}
+
+.child,
+.other{
+    height: 50px;
+    color: black;
+    line-height:50px;
+    text-indent:20px;
+}
+
+.child{
+    margin-left:auto;
+    margin-right:auto;
+    width: 500px;
+    background-color: #ffc82c;
+}
+
+.other{
+    width: 100px;
+    background-color: #ff4949;
+}
+
+/* 
+Display: boxtype을 결정짓는 css 속성 
+디스플레이 값이 무엇이냐에 따라 boxtype이 달라짐
+block: a라는 요소 옆 공간이 있어도 못 오도록 막는 속성
+따로 width를 선언하지 않은 경우, width=부모의 content-box의 100%
+별도로 블록에게 width 값을 선언하지 않으면 부모의 content box 길이 만큼 늘어남
+따로 width를 선언한 경우, 남은 공간은 margin으로 자동으로 채움 부모가 1000px인데 block요소가 400px이면 남은 공간은 600px로 채워짐
+따라서 다음 요소가 마진 자리 때문에 못 들어가게 되어 block 되는 것
+분명 마진으로 픽셀이 채워지지만 개발자 도구에서는 -로 없는 것처럼 나오는 것이 정상
+margin-lefT: auto; 마진이 전부 왼쪽으로 이동. 오른쪽에도 해주면 가운데 정렬이 되며 양쪽에 마진을 나눠가짐
+따로 부모의 height 를 선언하지 않을 경우, 자식 요소의 height 합=부모의 height
+*/

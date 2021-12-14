@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+/* (!!처음 시작할 때 시작 코드로!!)모든 요소들에게 박스 사이징이 content-box가 기준이 아닌 border-box를 기준으로 함 */
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* 기본적으로 size가 content box로 되어 있지만 padding 과 같이 크기를 넓혔을 때의 크기를 설정하기 위해 border-box를 사용함*/
+/* content box의 값이 자동으로 계산이 됨. */
+.box{
+    box-sizing:border-box;
+    width: 480px;
+    height:480px;
+    padding-top:40px;
+    padding-left:50px;
+    background-color: blue;
+    color:white;
+}
