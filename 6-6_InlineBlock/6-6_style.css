@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color:#212529;
+}
+
+span{
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    color: #fff;
+    background-color:#0066ff;
+}
+
+/* block의 좋은 점과 inline의 좋은 점을 갖고 있음
+inline은 흐름 가로 배치. top bottom 사용 x
+block은 가로 배치가 불편함
+inline block은 기본적으로 흐름과 동시에 가로 배치가 가능함 */
