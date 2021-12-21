@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color:#212529;
+}
+
+span{
+    color: #fff;
+    background-color:#0066ff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* block이 길막. inline은 흐름 
+block과 달리 width height padding&border&margin의 top bottom 사용 불가(인라인이 줄간격에서 흐름을 박살내기 때문)
+*/
